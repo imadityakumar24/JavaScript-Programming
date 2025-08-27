@@ -1,0 +1,54 @@
+<!-- Topic: Manipulating DOM Elements in JavaScript - Interactive Boxes -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation Example</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: lightgray;
+            display: inline-block;
+            margin: 10px;
+            text-align: center;
+            line-height: 100px;
+            font-weight: bold;
+            border-radius: 8px;
+        }
+        .highlight {
+            border: 3px solid red;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h2>Manipulating Boxes</h2>
+
+    <div id="box1" class="box">Box 1</div>
+    <div id="box2" class="box">Box 2</div>
+    <div id="box3" class="box">Box 3</div>
+
+    <br><br>
+
+    <!-- Buttons to manipulate -->
+    <button onclick="changeText()">Change Text</button>
+    <button onclick="changeColor()">Change Color</button>
+    <button onclick="addClass()">Add Class</button>
+    <button onclick="removeClass()">Remove Class</button>
+    <button onclick="toggleClass()">Toggle Class</button>
+    <button onclick="setBoxAttr()">Set Attribute</button>
+    <button onclick="getBoxAttr()">Get Attribute</button>
+
+    <!-- Note shown on webpage -->
+    <p style="color: rgb(179, 69, 239); font-weight: bold;">
+        Note: Some outputs are shown in the browser console.  
+        (Right Click → Inspect → Console)
+    </p>
+
+    <!-- Linking external JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

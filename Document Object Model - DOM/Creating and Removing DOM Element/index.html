@@ -1,0 +1,44 @@
+
+<!-- Topic: Create and Removing DOM Elements - [createElement(), appendChild(), insertBefore(), removeChild()] -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create and Remove DOM Elements</title>
+    <style>
+        .box {
+            padding: 10px;
+            margin: 5px;
+            border: 2px solid black;
+            display: inline-block;
+            background-color: lightyellow;
+        }
+    </style>
+</head>
+<body>
+    <h2>DOM Create and Remove Example</h2>
+
+    <div id="container" class="box">
+        <p id="firstPara">This is the first paragraph.</p>
+    </div>
+
+    <br>
+
+    <!-- Buttons to demonstrate methods -->
+    <button onclick="createNewElement()">Create Element</button>
+    <button onclick="appendElement()">Append Element</button>
+    <button onclick="insertBeforeElement()">Insert Before</button>
+    <button onclick="removeElement()">Remove Element</button>
+
+    <!-- Note shown on webpage -->
+    <p style="color: red; font-weight: bold;">
+        Note: Some outputs are shown in the browser console.  
+        (Right Click → Inspect → Console)
+    </p>
+
+    <!-- Linking external JS -->
+    <script src="script.js"></script>
+</body>
+</html>
