@@ -1,0 +1,42 @@
+
+<!-- 
+Topic: Working with Classes in JavaScript (classList methods)
+
+Concept:
+1. classList.add("className") → Adds a class to an element.
+2. classList.remove("className") → Removes a class from an element.
+3. classList.toggle("className") → Adds class if not present, removes if already present.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClassList Example</title>
+    <style>
+        .highlight {
+            background-color: yellow;
+            color: red;
+            font-weight: bold;
+        }
+        .bigText {
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Working with Classes (classList methods)</h2>
+    <p>👉 Some output is shown in <b>alerts</b> and some in <b>console</b>. <br>
+    Check console (Press F12 → Console Tab) to see extra output.</p>
+
+    <p id="myPara">This is a sample paragraph.</p>
+
+    <button id="addBtn">Add Class</button>
+    <button id="removeBtn">Remove Class</button>
+    <button id="toggleBtn">Toggle Class</button>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

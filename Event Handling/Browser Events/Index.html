@@ -1,0 +1,34 @@
+
+<!-- 
+Topic: Browser Events - [DOMContentLoaded, load, resize, scroll]
+
+Concept:
+1. DOMContentLoaded → Fires when the initial HTML document is completely loaded and parsed (without waiting for images, CSS).
+2. load → Fires when the whole page (including images, CSS, scripts) is fully loaded.
+3. resize → Fires when the browser window is resized.
+4. scroll → Fires when the page is scrolled.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser Events Example</title>
+    <style>
+        body {
+            height: 1500px; /* Extra height to enable scrolling */
+        }
+    </style>
+</head>
+<body>
+    <h2>Browser Events Demo</h2>
+    <p>👉 Some output is shown in <b>alerts</b> and some in <b>console</b>. <br>
+    Check console (Press F12 → Console Tab) to see extra output.</p>
+
+    <img src="https://images.unsplash.com/photo-1756049060197-37b4b52c3183?q=80&w=986&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Sample Image">
+
+    <!-- External JS -->
+    <script src="script.js"></script>
+</body>
+</html>

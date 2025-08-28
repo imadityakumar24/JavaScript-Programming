@@ -1,0 +1,33 @@
+
+<!-- 
+Topic: Event Handling in JavaScript
+
+Concept:
+1. addEventListener() → Used to attach an event handler to an element without overwriting existing ones.
+2. event bubbling → When an event occurs on an element, it first runs the handler on that element, then on its parent, then the ancestors (default behavior).
+3. event.target → Refers to the exact element that triggered the event (not necessarily the one the listener is attached to).
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handling Example</title>
+</head>
+<body>
+    <h2>Event Handling in JavaScript</h2>
+    <p>👉 Some output will be shown in <b>alerts</b> and some in <b>console</b>. <br>
+    Check console (Press F12 → Console Tab) to see extra output.</p>
+
+    <!-- Parent container -->
+    <div id="parent" style="padding:20px; border:2px solid red;">
+        Parent Div
+        <!-- Child element -->
+        <button id="childBtn">Click Me</button>
+    </div>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

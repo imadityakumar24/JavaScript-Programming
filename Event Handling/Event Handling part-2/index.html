@@ -1,0 +1,59 @@
+
+<!-- 
+Topic: Scroll Events, Mouse Events, Key Events, and Strict Mode in JavaScript
+
+Concept:
+1. Scroll Events → Triggered when the user scrolls a page or element.
+2. Mouse Events → Triggered by mouse actions like click, dblclick, mouseover, mouseout, etc.
+3. Key Events → Triggered when a keyboard key is pressed, released, or held down (keydown, keyup).
+4. Strict Mode → A way to write cleaner, safer JavaScript by throwing errors for unsafe actions.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events & Strict Mode</title>
+    <style>
+        #scrollBox {
+            width: 300px;
+            height: 100px;
+            overflow: scroll;
+            border: 2px solid blue;
+            margin-top: 20px;
+        }
+        #scrollContent {
+            height: 300px;
+            padding: 10px;
+        }
+        #mouseBox {
+            width: 200px;
+            height: 100px;
+            background: lightgreen;
+            margin-top: 20px;
+            line-height: 100px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>Scroll, Mouse, Key Events & Strict Mode</h2>
+    <p>👉 Some output is shown in <b>alerts</b> and some in <b>console</b>. <br>
+    Check console (Press F12 → Console Tab) to see extra output.</p>
+
+    <!-- Scroll Event Example -->
+    <div id="scrollBox">
+        <div id="scrollContent">Scroll inside this box to see event in action.</div>
+    </div>
+
+    <!-- Mouse Event Example -->
+    <div id="mouseBox">Hover / Click Me</div>
+
+    <!-- Key Event Example -->
+    <input type="text" id="keyInput" placeholder="Type something here">
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
