@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body {
+            background-color: rgb(224, 237, 215);
+        }
+
+        small {
+            font-size: 16px;
+            color: blue;
+            /* display: none; */
+        }
+
+        #box {
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+    
+
+    <form>
+        <input required minlength="3" maxlength="10" id="name"type="text" placeholder="name"> 
+        <div id="box">
+            <br>
+            <small>name lenth should be greater then 3</small> 
+        </div>
+        <br> <br>
+        <input type="email" placeholder="email"><br><br>
+        <input type="password" placeholder="password"><br><br>
+        <select name="" id="">
+            <option value="male">male</option>
+            <option value="female">female</option>
+            <option value="others">others</option>
+        </select>
+        <br><br>
+        <textarea placeholder="write something"></textarea>
+        <br><br>
+        <input type="submit">
+    </form>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
