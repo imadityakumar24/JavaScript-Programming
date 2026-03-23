@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+
+    <style>
+        /* ===== PAGE STYLE ===== */
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* ===== FORM CONTAINER ===== */
+        form {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            width: 320px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* ===== INPUTS ===== */
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 3px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        /* red border when error */
+        .error-border {
+            border: 2px solid red;
+        }
+
+        /* error text */
+        .error {
+            color: red;
+            font-size: 12px;
+            height: 14px;
+            margin-bottom: 8px;
+        }
+
+        /* spacing */
+        .group {
+            margin-bottom: 10px;
+        }
+
+        /* button */
+        button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            background: #2b7cff;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #1a5edb;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form id="formContainer" novalidate>
+
+        <div class="group">
+            <label>Name</label>
+            <input id="name" type="text" placeholder="Enter name">
+            <small class="error" id="nameError"></small>
+        </div>
+
+        <div class="group">
+            <label>Email</label>
+            <input id="email" type="text" placeholder="Enter email">
+            <small class="error" id="emailError"></small>
+        </div>
+
+        <div class="group">
+            <label>Password</label>
+            <input id="password" type="password" placeholder="Enter password">
+            <small class="error" id="passwordError"></small>
+        </div>
+
+        <div class="group">
+            <label>Choose Sports</label><br>
+            <label><input type="checkbox" value="Cricket"> Cricket</label>
+            <label><input type="checkbox" value="Hockey"> Hockey</label>
+            <label><input type="checkbox" value="Football"> Football</label>
+            <small class="error" id="sportsError"></small>
+        </div>
+
+        <div class="group">
+            <label>Gender</label><br>
+            <label><input type="radio" name="gender" value="male"> Male</label>
+            <label><input type="radio" name="gender" value="female"> Female</label>
+            <small class="error" id="genderError"></small>
+        </div>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+  
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

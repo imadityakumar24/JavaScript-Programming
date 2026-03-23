@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form id="formContainer">
+
+    <!-- NAME -->
+    <label for="name">Name</label>
+    <input id="name" type="text" placeholder="Enter name"
+           required minlength="3">
+
+    <!-- EMAIL -->
+    <label for="email">Email</label>
+    <input id="email" type="email" placeholder="Enter email"
+           required>
+
+    <!-- PASSWORD -->
+    <label for="password">Password</label>
+    <input id="password" type="password"
+           placeholder="Enter password"
+           required minlength="6">
+
+    <!-- SPORTS (checkbox) -->
+    <label>Choose Sports</label>
+    <label><input type="checkbox" value="Cricket"> Cricket</label>
+    <label><input type="checkbox" value="Hockey"> Hockey</label>
+    <label><input type="checkbox" value="Football"> Football</label>
+
+    <!-- GENDER (radio) -->
+    <label>Gender</label>
+    <label><input type="radio" name="gender" value="male" required> Male</label>
+    <label><input type="radio" name="gender" value="female"> Female</label>
+
+    <button type="submit">Submit</button>
+
+</form>
+
+<script src="script.js"></script>
+</body>
+</html>

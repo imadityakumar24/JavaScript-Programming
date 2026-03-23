@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .yello {
+            height: 500px;
+            width: 500px;
+            background-color: yellow;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .red {
+            height: 350px;
+            width: 350px;
+            background-color: red;
+             display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .aqua {
+            height: 200px;
+            width: 200px;
+            background-color: aqua;
+             display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Event bubbling and capturing</h1>
+
+    <div class="yello">
+        <div class="red">
+            <div class="aqua">
+                <span>Interesting</span>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
